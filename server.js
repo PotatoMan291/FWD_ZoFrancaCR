@@ -1,17 +1,19 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, "public")));
 
-app.use(express.static(path.join(__dirname, 'public')));
-
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'pages/dashboard.html'));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "pages", "dashboard.html"));
 });
 
-const PORT = 3001;
+// El frontend usa un puerto distinto al backend json-server.
+// json-server queda en 3001, como esperan los servicios de public/js/config.js.
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Frontend ZoFranca CR: http://localhost:${PORT}`);
+  console.log("Backend esperado: http://localhost:3001");
 });
