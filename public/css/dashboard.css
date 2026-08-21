@@ -230,7 +230,7 @@ a {
 .page-heading p {
   margin: 6px 0 0;
   color: #705754;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 /* =========================
@@ -356,7 +356,7 @@ a {
   outline: none;
   color: #504644;
   background: #fff;
-  font-size: 7px;
+  font-size: 9px;
 }
 
 .search input::placeholder {
@@ -373,7 +373,7 @@ a {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 4px;
-  font-size: 7px;
+  font-size: 9px;
   white-space: nowrap;
 }
 
@@ -387,7 +387,7 @@ a {
   border: 0;
   background: transparent;
   color: #65524e;
-  font-size: 7px;
+  font-size: 9px;
   white-space: nowrap;
 }
 
@@ -401,7 +401,7 @@ a {
   border-radius: 4px;
   color: #fff;
   background: #800000;
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -444,7 +444,7 @@ th {
   height: 31px;
   padding: 7px 8px;
   color: #6e4e49;
-  font-size: 5.5px;
+  font-size: 8px;
   line-height: 1.05;
   font-weight: 700;
   text-align: left;
@@ -456,7 +456,7 @@ td {
   padding: 7px 8px;
   color: #5a4946;
   border-top: 1px solid #eef1f3;
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.25;
   vertical-align: middle;
 }
@@ -477,7 +477,7 @@ tbody tr:nth-child(even) {
   place-items: center;
   border: 1.5px solid currentColor;
   border-radius: 50%;
-  font-size: 6px;
+  font-size: 8px;
   font-weight: 700;
 }
 
@@ -492,14 +492,14 @@ tbody tr:nth-child(even) {
 .score-total {
   margin-left: 2px;
   color: #87736f;
-  font-size: 5.5px;
+  font-size: 8px;
 }
 
 .badge {
   display: inline-block;
   padding: 4px 6px 3px;
   border-radius: 2px;
-  font-size: 5.5px;
+  font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.15px;
 }
@@ -578,7 +578,7 @@ th:nth-child(8), td:nth-child(8) { width: 10%; }
 .table-footer p {
   margin: 0;
   color: #765e59;
-  font-size: 6.5px;
+  font-size: 9px;
 }
 
 .pagination {
@@ -597,7 +597,7 @@ th:nth-child(8), td:nth-child(8) { width: 10%; }
   border-radius: 3px;
   background: transparent;
   color: #765e59;
-  font-size: 7px;
+  font-size: 9px;
 }
 
 .pagination button:disabled {
@@ -667,7 +667,7 @@ th:nth-child(8), td:nth-child(8) { width: 10%; }
   }
 
   .page-heading p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .metric-card {
@@ -700,7 +700,7 @@ th:nth-child(8), td:nth-child(8) { width: 10%; }
   .filter-btn,
   .clear-btn,
   .new-btn {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .search input,
@@ -714,26 +714,26 @@ th:nth-child(8), td:nth-child(8) { width: 10%; }
 
   th {
     height: 46px;
-    font-size: 8px;
+    font-size: 11px;
   }
 
   td {
     height: 66px;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .score {
     width: 26px;
     height: 26px;
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .score-total {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .badge {
-    font-size: 7.5px;
+    font-size: 10px;
   }
 
   .table-footer {
@@ -742,7 +742,7 @@ th:nth-child(8), td:nth-child(8) { width: 10%; }
 
   .table-footer p,
   .pagination button {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 
@@ -815,9 +815,9 @@ button { font-family: inherit; }
 
 .section-title { padding: 13px 14px; border-bottom: 1px solid var(--border); }
 .section-title h3, .detail-card h3, .content-card h3 {
-  margin: 0; color: #650000; font-size: 12px; font-weight: 700;
+  margin: 0; color: #650000; font-size: 14px; font-weight: 700;
 }
-.section-title p { margin: 3px 0 0; color: var(--muted); font-size: 8px; }
+.section-title p { margin: 3px 0 0; color: var(--muted); font-size: 10px; }
 
 .content-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
 .content-card, .detail-card {
@@ -849,17 +849,17 @@ button { font-family: inherit; }
 .compact-control {
   display: inline-flex; align-items: center; gap: 3px; height: 24px; padding: 0 5px;
   border: 1px solid var(--border); border-radius: 4px; background: #fff;
-  color: #665451; font-size: 7px;
+  color: #665451; font-size: 9px;
 }
 .compact-control > span { color: #84736f; }
 .compact-control select, .compact-control input {
-  max-width: 88px; height: 20px; padding: 0 2px; border: 0; outline: 0;
-  background: transparent; color: #514441; font-size: 7px;
+  max-width: 96px; height: 20px; padding: 0 2px; border: 0; outline: 0;
+  background: transparent; color: #514441; font-size: 9px;
 }
 
 .secondary-btn, .primary-btn, .danger-btn, .text-btn {
   min-height: 28px; display: inline-flex; align-items: center; justify-content: center;
-  gap: 5px; padding: 6px 10px; border-radius: 4px; font-size: 8px;
+  gap: 5px; padding: 6px 10px; border-radius: 4px; font-size: 11px;
   font-weight: 600; transition: .18s ease;
 }
 .primary-btn { border: 1px solid #790000; background: #790000; color: #fff; }
@@ -877,11 +877,11 @@ button { font-family: inherit; }
 .form-grid.single { grid-template-columns: 1fr; }
 .form-field { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
 .form-field.full, .full { grid-column: 1 / -1; }
-.form-field > span, .checkbox-field legend { color: #654b47; font-size: 8px; font-weight: 600; }
+.form-field > span, .checkbox-field legend { color: #654b47; font-size: 12px; font-weight: 600; }
 
 .form-field input, .form-field select, .form-field textarea {
   width: 100%; min-height: 32px; padding: 7px 9px; border: 1px solid #dfe4e7;
-  border-radius: 4px; outline: 0; background: #fff; color: #382f2d; font-size: 9px;
+  border-radius: 4px; outline: 0; background: #fff; color: #382f2d; font-size: 13px;
   transition: border-color .15s ease, box-shadow .15s ease;
 }
 .form-field textarea { min-height: 72px; resize: vertical; }
@@ -898,7 +898,17 @@ button { font-family: inherit; }
 .checkbox-grid label {
   display: flex; align-items: center; gap: 7px; min-height: 30px; padding: 6px 8px;
   border: 1px solid #e1e5e8; border-radius: 4px; color: #5d4b47;
-  background: #fbfcfc; font-size: 8px;
+  background: #fbfcfc; font-size: 12px;
+}
+
+.checkbox-grid input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-height: 0;
+  flex: 0 0 18px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--wine);
 }
 
 .form-actions, .modal-actions { display: flex; justify-content: flex-end; gap: 7px; margin-top: 14px; }
@@ -909,7 +919,7 @@ button { font-family: inherit; }
   color: #6d5752; background: #fff6f5; border: 1px solid #f0d6d3; border-radius: 4px;
 }
 .form-note { display: flex; align-items: flex-start; gap: 8px; padding: 9px; margin-top: 12px; }
-.form-note p, .information-message { margin: 0; font-size: 8px; line-height: 1.5; }
+.form-note p, .information-message { margin: 0; font-size: 12px; line-height: 1.5; }
 .information-message { padding: 10px; margin-bottom: 12px; }
 
 .detail-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px; margin-bottom: 10px; }
@@ -942,6 +952,7 @@ button { font-family: inherit; }
 }
 .empty-state.compact { min-height: 80px; padding: 16px; }
 .empty-state p, .view-state p, .view-state h2 { margin: 0; }
+.empty-state p { font-size: 10px; line-height: 1.5; }
 .empty-state .material-symbols-outlined, .view-state > .material-symbols-outlined { color: #b7857e; font-size: 28px; }
 .view-state h2 { color: #680000; font-size: 14px; }
 .view-state p { font-size: 8px; }
@@ -1122,6 +1133,32 @@ html[data-theme="dark"] .information-message {
   border-color: #42464a;
 }
 
+html[data-theme="dark"] .checkbox-grid label,
+html[data-theme="dark"] .compact-control select,
+html[data-theme="dark"] .compact-control input,
+html[data-theme="dark"] .table-footer p,
+html[data-theme="dark"] .pagination button,
+html[data-theme="dark"] .score-total {
+  color: #f3f5f6;
+}
+
+html[data-theme="dark"] th {
+  color: #f7f8f9;
+}
+
+html[data-theme="dark"] td {
+  color: #edf0f2;
+}
+
+html[data-theme="dark"] .empty-state .material-symbols-outlined,
+html[data-theme="dark"] .view-state > .material-symbols-outlined {
+  color: #e4e8eb;
+}
+
+html[data-theme="dark"] .pagination button:disabled {
+  color: #8f969b;
+}
+
 html[data-theme="dark"] .detail-list div,
 html[data-theme="dark"] .summary-list div,
 html[data-theme="dark"] .document-list li,
@@ -1179,12 +1216,15 @@ html[data-theme="dark"] .section-title,
 html[data-theme="dark"] .table-footer { border-color: #393c3f; }
 
 @media (min-width: 900px) {
-  .section-title h3, .detail-card h3, .content-card h3 { font-size: 15px; }
+  .section-title h3, .detail-card h3, .content-card h3 { font-size: 17px; }
   .section-title p, .form-field > span, .checkbox-field legend,
-  .evaluation-result p, .information-message, .form-note p { font-size: 10px; }
-  .compact-control, .compact-control select, .compact-control input { font-size: 9px; }
-  .primary-btn, .secondary-btn, .danger-btn, .text-btn { min-height: 34px; padding: 7px 12px; font-size: 10px; }
-  .form-field input, .form-field select, .form-field textarea { font-size: 11px; }
+  .evaluation-result p, .information-message, .form-note p { font-size: 12px; }
+  .compact-control, .compact-control select, .compact-control input { font-size: 12px; }
+  .primary-btn, .secondary-btn, .danger-btn, .text-btn { min-height: 34px; padding: 7px 12px; font-size: 12px; }
+  .form-field input, .form-field select, .form-field textarea { font-size: 13px; }
+  .checkbox-grid label { min-height: 40px; padding: 9px 11px; font-size: 12px; }
+  .empty-state p { font-size: 12px; }
+  .empty-state .material-symbols-outlined { font-size: 32px; }
   .detail-list dt, .field-error, .timeline small, .document-list li small, .muted-value { font-size: 9px; }
   .detail-list dd, .timeline h3, .document-list li span:not(.material-symbols-outlined),
   .evaluation-result p, .help-content, .confirm-message p { font-size: 10px; }
