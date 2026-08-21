@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solicitudes de instalación - ZoFranca CR</title>
+    <meta name="description"
+        content="ZoFranca CR - Gestión académica de solicitudes y cumplimiento para Zona Franca." />
+    <title>ZoFranca CR</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,212 +18,88 @@
 </head>
 
 <body>
-
-    <aside class="sidebar">
+    <aside class="sidebar" aria-label="Navegación principal">
         <div class="brand">
             <h1>ZoFranca CR</h1>
             <span>Gestión de Zona Franca</span>
         </div>
 
         <nav class="sidebar-nav">
-            <a href="#" class="nav-link">
-                <span class="material-symbols-outlined">grid_view</span>
+            <a href="#inicio" class="nav-link" data-view="inicio">
+                <span class="material-symbols-outlined" aria-hidden="true">grid_view</span>
                 <span>Inicio</span>
             </a>
 
-            <a href="#" class="nav-link active">
-                <span class="material-symbols-outlined filled">description</span>
+            <a href="#solicitudes" class="nav-link active" data-view="solicitudes" aria-current="page">
+                <span class="material-symbols-outlined filled" aria-hidden="true">description</span>
                 <span>Solicitudes</span>
             </a>
 
-            <a href="#" class="nav-link">
-                <span class="material-symbols-outlined">verified_user</span>
+            <a href="#cumplimiento" class="nav-link" data-view="cumplimiento">
+                <span class="material-symbols-outlined" aria-hidden="true">verified_user</span>
                 <span>Cumplimiento</span>
             </a>
 
-            <a href="#" class="nav-link">
-                <span class="material-symbols-outlined">notifications_active</span>
+            <a href="#alertas" class="nav-link" data-view="alertas">
+                <span class="material-symbols-outlined" aria-hidden="true">notifications_active</span>
                 <span>Alertas</span>
             </a>
 
-            <a href="#" class="nav-link">
-                <span class="material-symbols-outlined">factory</span>
+            <a href="#zona" class="nav-link" data-view="zona">
+                <span class="material-symbols-outlined" aria-hidden="true">factory</span>
                 <span>Zona Franca</span>
             </a>
         </nav>
 
-        <div class="sidebar-profile">
-            <span class="material-symbols-outlined">account_circle</span>
-            <span>María González</span>
-        </div>
+        <button id="sessionProfile" class="sidebar-profile profile-control" type="button"
+            title="Cerrar sesión académica">
+            <span class="material-symbols-outlined" aria-hidden="true">account_circle</span>
+            <span class="sidebar-profile-text">
+                <strong data-session-name>María González</strong>
+                <small data-session-role>Analista de solicitudes</small>
+            </span>
+        </button>
     </aside>
 
     <div class="app">
         <header class="topbar">
-            <div class="breadcrumb">Solicitudes</div>
+            <div id="breadcrumb" class="breadcrumb">Solicitudes</div>
 
             <div class="topbar-actions">
-                <button class="icon-btn" aria-label="Notificaciones">
-                    <span class="material-symbols-outlined">notifications</span>
+                <button id="notificationsButton" class="icon-btn" type="button" aria-label="Ver alertas"
+                    title="Alertas">
+                    <span class="material-symbols-outlined" aria-hidden="true">notifications</span>
                 </button>
-                <button class="icon-btn" aria-label="Ayuda">
-                    <span class="material-symbols-outlined">help_outline</span>
+
+                <button id="themeToggle" class="icon-btn" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+                    <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
                 </button>
-                <div class="avatar" aria-label="Perfil">
-                    <span class="material-symbols-outlined">account_circle</span>
-                </div>
+
+                <button id="helpButton" class="icon-btn" type="button" aria-label="Ayuda" title="Ayuda">
+                    <span class="material-symbols-outlined" aria-hidden="true">help_outline</span>
+                </button>
+
+                <button id="profileButton" class="avatar profile-control" type="button" aria-label="Perfil académico"
+                    title="Cerrar sesión académica">
+                    <span class="avatar-initials">MG</span>
+                    <span class="sr-only" data-session-name>María González</span>
+                </button>
             </div>
         </header>
 
-        <main class="main">
-            <section class="page-heading">
-                <h2>Solicitudes de instalación</h2>
-                <p>Administre y evalúe las solicitudes recibidas por la Zona Franca.</p>
-            </section>
-
-            <section class="metrics-grid">
-                <article class="metric-card">
-                    <span class="metric-icon material-symbols-outlined">description</span>
-                    <p>TOTAL SOLICITUDES</p>
-                    <strong>24</strong>
-                </article>
-
-                <article class="metric-card">
-                    <span class="metric-icon success material-symbols-outlined">check_circle</span>
-                    <p>RECOMENDADAS</p>
-                    <strong>14</strong>
-                    <div class="metric-line success-line"></div>
-                </article>
-
-                <article class="metric-card">
-                    <span class="metric-icon warning material-symbols-outlined">pending</span>
-                    <p>POR REVISAR</p>
-                    <strong>6</strong>
-                    <div class="metric-line warning-line"></div>
-                </article>
-
-                <article class="metric-card">
-                    <span class="metric-icon danger material-symbols-outlined">cancel</span>
-                    <p>RECHAZADAS</p>
-                    <strong>4</strong>
-                    <div class="metric-line danger-line"></div>
-                </article>
-            </section>
-
-            <section class="toolbar">
-                <div class="toolbar-left">
-                    <label class="search">
-                        <span class="material-symbols-outlined">search</span>
-                        <input type="text" placeholder="Buscar empresa..." />
-                    </label>
-
-                    <button class="filter-btn">Estado <span
-                            class="material-symbols-outlined">arrow_drop_down</span></button>
-                    <button class="filter-btn">Sector <span
-                            class="material-symbols-outlined">arrow_drop_down</span></button>
-                    <button class="filter-btn">Zona Franca <span
-                            class="material-symbols-outlined">arrow_drop_down</span></button>
-                    <button class="filter-btn">Fecha <span
-                            class="material-symbols-outlined">arrow_drop_down</span></button>
-
-                    <button class="clear-btn">Limpiar filtros</button>
-                </div>
-
-                <button class="new-btn">
-                    <span class="material-symbols-outlined">add</span>
-                    Nueva solicitud
-                </button>
-            </section>
-
-            <section class="table-card">
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>EMPRESA</th>
-                                <th>SECTOR</th>
-                                <th>INVERSIÓN<br>PROYECTADA</th>
-                                <th>EMPLEOS</th>
-                                <th>PUNTAJE<br>IA</th>
-                                <th>ESTADO</th>
-                                <th>FECHA</th>
-                                <th>ACCIÓN</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="company">MedTech<br>Solutions<br>CR</td>
-                                <td>Tecnología<br>médica</td>
-                                <td>$1,250,000</td>
-                                <td>125<br>empleos</td>
-                                <td>
-                                    <div class="score good">92</div>
-                                    <span class="score-total">/100</span>
-                                </td>
-                                <td><span class="badge badge-success">RECOMENDADA</span></td>
-                                <td>18/08/2026</td>
-                                <td><a class="detail-link" href="#">Ver detalle</a></td>
-                            </tr>
-
-                            <tr>
-                                <td class="company">LogisNet<br>Global</td>
-                                <td>Logística</td>
-                                <td>$3,400,000</td>
-                                <td>450<br>empleos</td>
-                                <td>
-                                    <div class="score warn">68</div>
-                                    <span class="score-total">/100</span>
-                                </td>
-                                <td><span class="badge badge-warning">POR REVISAR</span></td>
-                                <td>17/08/2026</td>
-                                <td><a class="detail-link" href="#">Ver detalle</a></td>
-                            </tr>
-
-                            <tr class="loading-row">
-                                <td><span class="skeleton sk-company"></span></td>
-                                <td><span class="skeleton sk-text"></span></td>
-                                <td><span class="skeleton sk-invest"></span></td>
-                                <td><span class="skeleton sk-small"></span></td>
-                                <td><span class="skeleton sk-circle"></span></td>
-                                <td><span class="skeleton sk-status"></span></td>
-                                <td><span class="skeleton sk-date"></span></td>
-                                <td><span class="skeleton sk-action"></span></td>
-                            </tr>
-
-                            <tr class="loading-row">
-                                <td><span class="skeleton sk-company"></span></td>
-                                <td><span class="skeleton sk-text"></span></td>
-                                <td><span class="skeleton sk-invest"></span></td>
-                                <td><span class="skeleton sk-small"></span></td>
-                                <td><span class="skeleton sk-circle"></span></td>
-                                <td><span class="skeleton sk-status"></span></td>
-                                <td><span class="skeleton sk-date"></span></td>
-                                <td><span class="skeleton sk-action"></span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <footer class="table-footer">
-                    <p>Mostrando <b>1</b> a <b>10</b> de <b>24</b> resultados</p>
-
-                    <div class="pagination">
-                        <button disabled>
-                            <span class="material-symbols-outlined">chevron_left</span>
-                        </button>
-                        <button class="active-page">1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>
-                            <span class="material-symbols-outlined">chevron_right</span>
-                        </button>
-                    </div>
-                </footer>
+        <main id="appMain" class="main" tabindex="-1">
+            <section class="view-state" role="status">
+                <span class="spinner" aria-hidden="true"></span>
+                <h2>Cargando ZoFranca CR...</h2>
+                <p>Preparando la información de la plataforma.</p>
             </section>
         </main>
     </div>
 
+    <div id="modalRoot"></div>
+    <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+    <script type="module" src="../js/index.js"></script>
 </body>
 
 </html>

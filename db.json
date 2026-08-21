@@ -1,0 +1,124 @@
+{
+  "zonasFrancas": [
+    {
+      "id": "1",
+      "nombre": "Zona Franca Coyol",
+      "inversionMinima": 50000,
+      "empleosMinimos": 10,
+      "sectoresPermitidos": [
+        "Ciencias de la vida",
+        "Dispositivos médicos",
+        "Manufactura inteligente",
+        "Semiconductores",
+        "Servicios especializados"
+      ],
+      "fechaActualizacion": "2026-08-20T12:00:00.000Z",
+      "actualizadoPor": "Administrador"
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": "1",
+      "empresa": "MedTech Solutions CR",
+      "identificacionJuridica": "3-101-900001",
+      "representante": "Laura Jiménez",
+      "correo": "laura@medtech.example",
+      "telefono": "2200-1001",
+      "sector": "Dispositivos médicos",
+      "inversionProyectada": 1250000,
+      "empleosProyectados": 125,
+      "documentos": [
+        {
+          "nombre": "Personería jurídica",
+          "tipo": "Legal",
+          "referencia": "DOC-1"
+        },
+        {
+          "nombre": "Plan de inversión",
+          "tipo": "Financiero",
+          "referencia": "DOC-2"
+        }
+      ],
+      "zonaFrancaId": "1",
+      "estado": "Evaluada",
+      "puntajeIA": 100,
+      "clasificacionIA": "Recomendada",
+      "clasificacionFinal": null,
+      "eliminada": false,
+      "fechaCreacion": "2026-08-18T14:00:00.000Z",
+      "fechaEvaluacion": "2026-08-18T14:05:00.000Z",
+      "fechaActualizacion": "2026-08-18T14:05:00.000Z"
+    },
+    {
+      "id": "2",
+      "empresa": "LogisNet Global",
+      "identificacionJuridica": "3-101-900002",
+      "representante": "Carlos Mora",
+      "correo": "carlos@logisnet.example",
+      "telefono": "2200-1002",
+      "sector": "Servicios especializados",
+      "inversionProyectada": 3400000,
+      "empleosProyectados": 450,
+      "documentos": [
+        {
+          "nombre": "Plan de operaciones",
+          "tipo": "Referencia",
+          "referencia": "DOC-1"
+        }
+      ],
+      "zonaFrancaId": "1",
+      "estado": "Pendiente",
+      "puntajeIA": null,
+      "clasificacionIA": null,
+      "clasificacionFinal": null,
+      "eliminada": false,
+      "fechaCreacion": "2026-08-19T15:00:00.000Z",
+      "fechaActualizacion": "2026-08-19T15:00:00.000Z"
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "1",
+      "solicitudId": "1",
+      "zonaFrancaId": "1",
+      "puntaje": 100,
+      "clasificacion": "Recomendada",
+      "justificacion": "El sector está permitido y la inversión y los empleos proyectados superan los mínimos configurados.",
+      "fecha": "2026-08-18T14:05:00.000Z",
+      "motor": "IA simulada determinista v1.0"
+    }
+  ],
+  "empresas": [],
+  "reportesCumplimiento": [],
+  "alertas": [],
+  "historialDecisiones": [
+    {
+      "id": "1",
+      "tipo": "Creación",
+      "entidad": "Solicitud",
+      "entidadId": "1",
+      "solicitudId": "1",
+      "empresaId": null,
+      "valorAnterior": null,
+      "valorNuevo": "Pendiente",
+      "responsable": "Laura Jiménez",
+      "justificacion": "Solicitud enviada mediante el formulario web.",
+      "detalle": "",
+      "fecha": "2026-08-18T14:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "tipo": "Evaluación IA",
+      "entidad": "Solicitud",
+      "entidadId": "1",
+      "solicitudId": "1",
+      "empresaId": null,
+      "valorAnterior": "Pendiente",
+      "valorNuevo": "Recomendada",
+      "responsable": "Motor IA simulado",
+      "justificacion": "El sector está permitido y la inversión y los empleos proyectados superan los mínimos configurados.",
+      "detalle": "",
+      "fecha": "2026-08-18T14:05:00.000Z"
+    }
+  ]
+}

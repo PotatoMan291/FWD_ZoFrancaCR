@@ -57,7 +57,7 @@ async function request(resource, { id = "", method = "GET", body } = {}) {
       throw new ApiError("La operación tardó demasiado. Intente nuevamente.", 408, error);
     }
     throw new ApiError(
-      "No se pudo conectar con el servidor. Verifique que json-server esté activo en el puerto 3001.",
+      "No se pudo conectar con el backend. Verifique que json-server esté activo en http://localhost:3001.",
       0,
       error,
     );
